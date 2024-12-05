@@ -1,0 +1,326 @@
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+
+/* Header Stuff Here*/
+header {
+    background-color: #34113F;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+}
+header div {
+    padding-left: 2vw;
+    
+}
+header h1 {
+    margin: 0;
+    color: #F8F4E3;        
+}
+
+header p {
+    margin: 0;
+    color: #F8F4E3;
+    letter-spacing: .5px;
+}
+
+/* Nav Stuff Here*/
+/*SMALL SCREEN NAVS*/
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0; 
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px;
+        background-color: #DC3E62;
+        background-image: linear-gradient(to bottom, #DC3E62, #BE2347);
+        color: #F8F4E3;
+    }
+    nav .active a {
+        background-color: #389494;
+        background-image: linear-gradient(to bottom, #389494, #276868);
+        color: #F8F4E3;
+    }
+    
+    
+    
+    
+} /*end of the media query*/
+
+
+/*WIDE SCREEN NAVS*/
+@media only screen and (min-width: 801px) {
+    nav {
+    background-color: #DC3E62;    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;    
+}
+
+nav ul li a {
+    font: 1.1rem;
+    text-decoration: none;
+    color: #F8F4E3;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 1rem;
+}
+
+nav li.active a {
+    background-color: #389494;
+        color: #F8F4E3;
+}
+
+nav ul li a:hover {
+    color: #34113F;
+}
+} /*end of the media query*/
+
+
+
+
+
+
+
+
+/*Stuff for Main*/
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #D42D43
+        ;
+}
+
+main h2 {
+    color: #3C9D9D
+        ;
+    margin-bottom: .2rem;
+}
+
+main h3
+{
+    color: #3C9D9D
+        ;
+    margin-bottom: .2rem;
+}
+
+main p{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+    padding: .25rem;
+    
+}
+
+main ol {
+    padding: 0.5rem 3vw;
+    background-color: #F8F4E3;
+    width: 200px; 
+}
+
+main dl dt {
+    color: #b40412;
+    font-weight: 700;
+}
+
+main dl dd {
+    color: #024873;
+    font-size: .9rem;
+}
+
+main ul { 
+    list-style-type: circle;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    color: #F8F4E3;
+    background-color: #389494;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #34113F;
+    border-radius: .5rem;
+}
+
+main a {
+    color: #024873;
+}
+
+main a:hover {
+    color: rgb(239,0,24);
+}
+
+figure.cover {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+    
+}
+
+figure.cover img {
+    width: 100%;
+    height: auto;
+    
+}
+
+figure.cover figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.celestehero{
+    width: 100%;
+    margin: 0;
+    
+}
+
+.celestehero img{
+    width: 100%;
+    height: auto;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+div.gallery figure:hover {
+    margin: .5rem 2% 0 0;
+    box-shadow: 4px 4px 10px grey;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    font-size: .8rem;
+    color: #b64e11;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid rgba(52, 17, 63, .2);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(52, 17, 63, .2);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #DC3E62;
+}
+    
+.myForm fieldset {
+    border: 1px solid #34113F;
+    background-color: rgba(248, 244, 227, .5); 
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #34113F;
+    font-size: .9rem;
+}
+
+input::placeholder {
+    color: black
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=date], .myForm [type=email], .myForm [type=tel], .myForm textarea{
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=date], .myForm [type=email], .myForm [type=tel], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+.myForm :required {
+    background-color: rgba(52, 17, 63, .2)
+}
+
+.myForm [type=submit] {
+    background-color: #389494;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: #F8F4E3;
+    margin: 1rem 0 0 1vw;
+}
+
+
+/* Footer Stuff Here*/
+footer {
+    background-color:  #F8F4E3;
+    text-align: center;
+    color: #225959;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    font-size: .8rem;    
+}
+
+footer a {
+    color: #225959;
+}
+
+footer a:hover {
+    color: rgb(239,0,24);
+}
+
+header, nav, main, footer{
+    max-width: 64rem;
+    margin: 0 auto;
+}
